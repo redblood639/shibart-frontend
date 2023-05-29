@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind components;
+.selected {
+  @apply text-white rounded-full bg-primary-500;
+}
+
+.date-tab {
+  @apply px-6 py-2 text-sm border border-white rounded-full cursor-pointer lg:text-base hover:border-primary-500;
+}
+
+.inputCrypto:focus-visible {
+  @apply outline-0;
+}
+
+.roadmap-li-text {
+  @apply flex gap-[18px] items-center text-[#686A6C] text-[20px] font-bold py-3 leading-[32px] first:mt-[28px];
+}
+.faq-li-text {
+  @apply text-[#686A6C] text-[20px] leading-[32px] font-bold mt-10;
+}
+.container {
+  @media (min-width: 1600px) {
+    max-width: 1600px;
+  }
+}
+@layer components {
+  .textList {
+    @apply mt-6 font-medium text-primary;
+  }
+  .seletedTab .inset-0 {
+    @apply hidden;
+  }
+}
