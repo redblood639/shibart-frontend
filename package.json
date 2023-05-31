@@ -1,56 +1,27 @@
 {
-  "name": "shiba-blockchain",
-  "author": "topcook <97187853+topcook@users.noreply.github.com>",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "set PORT=3002 && next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint --ext .ts,.js,.tsx .",
-    "lintfix": "eslint --fix --ext .ts,.js,.vue .",
-    "prettier": "prettier -c .",
-    "prettierfix": "prettier --write ."
-  },
-  "dependencies": {
-    "@material-tailwind/react": "^2.0.1",
-    "@netlify/plugin-nextjs": "^4.37.2",
-    "@rainbow-me/rainbowkit": "^1.0.0",
-    "@types/node": "20.1.4",
-    "@types/react": "18.2.6",
-    "@types/react-dom": "18.2.4",
-    "autoprefixer": "10.4.14",
-    "eslint": "8.40.0",
-    "eslint-config-next": "13.4.2",
-    "ethers": "^5.7.2",
-    "html-react-parser": "^3.0.16",
-    "next": "13.4.2",
-    "postcss": "8.4.23",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.4.0",
-    "react-toastify": "^9.0.8",
-    "sal.js": "^0.8.5",
-    "sass": "^1.56.1",
-    "tailwindcss": "3.3.2",
-    "typescript": "5.0.4",
-    "wagmi": "^1.0.6"
-  },
-  "resolutions": {
-    "@types/react": "18.2.6",
-    "@types/react-dom": "18.2.4"
-  },
-  "devDependencies": {
-    "@types/node": "18.7.14",
-    "@types/react": "18.0.17",
-    "@types/react-dom": "18.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.33.1",
-    "eslint": "8.23.0",
-    "eslint-config-next": "12.2.5",
-    "eslint-config-prettier": "^8.5.0",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
-    "typescript": "5.0.4"
-  }
+	"name": "shibart",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@types/node": "20.2.5",
+		"@types/react": "18.2.7",
+		"@types/react-dom": "18.2.4",
+		"eslint": "8.41.0",
+		"eslint-config-next": "13.4.4",
+		"next": "13.4.4",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"styled-components": "^5.3.11",
+		"typescript": "5.0.4"
+	},
+	"devDependencies": {
+		"@types/styled-components": "^5.1.26",
+		"babel-plugin-styled-components": "^2.1.3"
+	}
 }

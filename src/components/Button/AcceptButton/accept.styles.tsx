@@ -1,0 +1,25 @@
+import styled from "styled-components";
+
+export const AcceptWrapper = styled.div`
+	padding: 8px 20px;
+
+	border: 2px solid #3c2c2d;
+	border-radius: 4px;
+
+	cursor: pointer;
+`;
+
+export const Label = styled.span`
+	font-style: normal;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 24px;
+	/* identical to box height, or 200% */
+
+	letter-spacing: 0.17em;
+	text-transform: uppercase;
+
+	/* 2 */
+
+	color: #3c2c2d;
+`;
