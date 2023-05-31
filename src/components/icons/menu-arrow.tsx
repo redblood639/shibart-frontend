@@ -3,9 +3,9 @@ import React from "react";
 import { IconProps } from "types/Icon";
 
 // -----------------------------------------------
-const MinusIcon: React.FC<IconProps> = ({
-	iColor = "#686A6C",
-	iSize = { x: 32, y: 32 },
+const MenuArrow: React.FC<IconProps> = ({
+	iColor = "#555555",
+	iSize = { x: 24, y: 24 },
 }) => {
 	return (
 		<svg
@@ -14,23 +14,21 @@ const MinusIcon: React.FC<IconProps> = ({
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
-			<circle
-				cx="16"
-				cy="16"
-				r="12"
+			<path
+				d="M3 12H21"
 				stroke={iColor}
-				strokeWidth="1.5"
+				strokeWidth="2"
 				strokeLinecap="round"
 				strokeLinejoin="round"
 			/>
 			<path
-				d="M10.6665 16H21.3332"
+				d="M13 4L21 12L13 20"
 				stroke={iColor}
-				strokeWidth="1.5"
+				strokeWidth="2"
 				strokeLinecap="round"
 				strokeLinejoin="round"
 			/>
 		</svg>
 	);
 };
-export default MinusIcon;
+export default MenuArrow;

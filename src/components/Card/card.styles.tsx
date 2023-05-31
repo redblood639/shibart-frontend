@@ -4,13 +4,17 @@ export const CardWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	text-align: start;
-	padding: 80px;
+	padding: 80px 60px;
 	row-gap: 40px;
 	background: #f7fbfa;
 
 	cursor: pointer;
 	:hover {
 		box-shadow: 0px 32px 48px -16px rgba(0, 0, 0, 0.1);
+	}
+
+	@media screen and (max-width: 1024px) {
+		padding: 40px 24px;
 	}
 `;
 

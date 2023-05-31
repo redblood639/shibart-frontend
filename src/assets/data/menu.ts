@@ -1,53 +1,56 @@
 import { TMenuItem } from "types/MenuItem";
 
-export const MenuData:TMenuItem[] = [
+export const MenuData: TMenuItem[] = [
 	{
 		label: "BUY $ART",
-		link:"https://uniswap.io"
+		link: "https://uniswap.io",
+		special: true,
 	},
 	{
 		label: "WHITEPAPER",
-		link:"https://docs.google.com/document/d/1RbQczVVOjoHFzwivRfQSpK66b3dofENvHcSQF9WW7fQ/edit?usp=sharing"
+		link: "https://docs.google.com/document/d/1RbQczVVOjoHFzwivRfQSpK66b3dofENvHcSQF9WW7fQ/edit?usp=sharing",
+		special: false,
 	},
 	{
 		label: "FAQ",
-		link:"/FAQ"
+		link: "/FAQ",
+		special: false,
 	},
 ];
 
-export const Shibart:TMenuItem[] = [
+export const Shibart: TMenuItem[] = [
 	{
 		label: "How to buy",
-		link:""
+		link: "",
 	},
 	{
 		label: "Whitepaper",
-		link:"https://docs.google.com/document/d/1RbQczVVOjoHFzwivRfQSpK66b3dofENvHcSQF9WW7fQ/edit?usp=sharing"
+		link: "https://docs.google.com/document/d/1RbQczVVOjoHFzwivRfQSpK66b3dofENvHcSQF9WW7fQ/edit?usp=sharing",
 	},
-]
+];
 
-export const Info:TMenuItem[] = [
+export const Info: TMenuItem[] = [
 	{
 		label: "FAQ",
-		link:""
+		link: "",
 	},
 	{
 		label: "Roadmap",
-		link:""
+		link: "",
 	},
 	{
 		label: "Referral",
-		link:""
+		link: "",
 	},
-]
+];
 
-export const Social:TMenuItem[] = [
+export const Social: TMenuItem[] = [
 	{
 		label: "Twitter",
-		link:""
+		link: "",
 	},
 	{
 		label: "Discord",
-		link:""
+		link: "",
 	},
-]
+];

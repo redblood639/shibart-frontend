@@ -30,12 +30,7 @@ const GalleyView: React.FC = () => {
 			</div>
 			<GalleryContent>
 				{ShibArts.map((item: TArt, index: number) => (
-					<ArtImage
-						key={`galley-art-${index}`}
-						{...item}
-						width={370}
-						height={370}
-					/>
+					<ArtImage key={`galley-art-${index}`} {...item} />
 				))}
 			</GalleryContent>
 			<ExploreButton>

@@ -3,8 +3,8 @@ import React from "react";
 import { IconProps } from "types/Icon";
 
 // -----------------------------------------------
-const MinusIcon: React.FC<IconProps> = ({
-	iColor = "#686A6C",
+const CloseIcon: React.FC<IconProps> = ({
+	iColor = "#F7FBFA",
 	iSize = { x: 32, y: 32 },
 }) => {
 	return (
@@ -14,23 +14,23 @@ const MinusIcon: React.FC<IconProps> = ({
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
-			<circle
-				cx="16"
-				cy="16"
-				r="12"
+			<path
+				d="M8 24L24 8"
 				stroke={iColor}
-				strokeWidth="1.5"
+				strokeWidth="3"
+				strokeMiterlimit="10"
 				strokeLinecap="round"
 				strokeLinejoin="round"
 			/>
 			<path
-				d="M10.6665 16H21.3332"
+				d="M24 24L8 8"
 				stroke={iColor}
-				strokeWidth="1.5"
+				strokeWidth="3"
+				strokeMiterlimit="10"
 				strokeLinecap="round"
 				strokeLinejoin="round"
 			/>
 		</svg>
 	);
 };
-export default MinusIcon;
+export default CloseIcon;

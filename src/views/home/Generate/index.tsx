@@ -22,7 +22,27 @@ const GenerateView: React.FC = () => {
 				We are revolutionizing the world of digital art with the power of stable
 				diffusion & blockchain
 			</Label>
-			<Swiper slidesPerView={5} spaceBetween={40} className="create-swiper">
+			<Swiper
+				className="create-swiper"
+				breakpoints={{
+					1024: {
+						slidesPerView: 2,
+						spaceBetween: 20,
+					},
+					1440: {
+						slidesPerView: 4,
+						spaceBetween: 30,
+					},
+					1600: {
+						slidesPerView: 4,
+						spaceBetween: 40,
+					},
+					1900: {
+						slidesPerView: 5,
+						spaceBetween: 40,
+					},
+				}}
+			>
 				{ShibArts.map((item: TArt, index: number) => (
 					<SwiperSlide key={`swiper-creat-art-${index}`}>
 						<ArtImage {...item} />

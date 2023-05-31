@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 
 export interface TArt {
 	label: string;
-	imgSrc: string | StaticImageData;
+	imgSrc: StaticImageData;
 	width?: number;
 	height?: number;
 }

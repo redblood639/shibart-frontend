@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const LinkRightWrapper = styled.div`
-	height: 288px;
-
 	display: flex;
 	justify-content: space-between;
 	align-items: start;
@@ -14,20 +12,34 @@ export const LinkRightWrapper = styled.div`
 		flex-direction: column;
 		align-items: start;
 
-		gap: 20px;
+		row-gap: 20px;
 	}
 
 	& > div:nth-child(2) {
 		display: flex;
 		align-items: start;
 
-		gap: 169px;
+		column-gap: 169px;
+
+		@media screen and (max-width: 375px) {
+			column-gap: 50px;
+		}
 
 		& > div {
 			display: flex;
 			flex-direction: column;
-			gap: 34px;
+			row-gap: 34px;
 		}
+	}
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		padding: 42px;
+		row-gap: 32px;
+	}
+
+	@media screen and (max-width: 375px) {
+		padding: 24px;
 	}
 `;
 

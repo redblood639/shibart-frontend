@@ -1,5 +1,8 @@
-export const RoadMapData = [
+import { TRoadMap } from "types/roadmap";
+
+export const RoadMapData: TRoadMap[] = [
 	{
+		id: 1,
 		title: "Already Done",
 		labels: [
 			"AI art generator - operational and connected to external GPUs",
@@ -11,6 +14,7 @@ export const RoadMapData = [
 		],
 	},
 	{
+		id: 2,
 		title: "Q3, 2023",
 		labels: [
 			"TGE",
@@ -23,6 +27,7 @@ export const RoadMapData = [
 		],
 	},
 	{
+		id: 3,
 		title: "Q4, 2024",
 		labels: [
 			"Client-side software to harness distributed GPU power",

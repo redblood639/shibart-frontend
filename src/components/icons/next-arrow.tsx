@@ -5,7 +5,7 @@ import { IconProps } from "types/Icon";
 // -----------------------------------------------
 const NextArrowIcon: React.FC<IconProps> = ({
 	iColor = "#202025",
-	iSize = { x: 132, y: 37 },
+	iSize = { x: 81, y: 23 },
 }) => {
 	return (
 		<svg
@@ -14,11 +14,18 @@ const NextArrowIcon: React.FC<IconProps> = ({
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
-			<rect y="14" width="128" height="8" rx="4" fill="#202025" />
+			<rect
+				x="0.555664"
+				y="8.94373"
+				width="78.2222"
+				height="4.88889"
+				rx="2.44444"
+				fill={iColor}
+			/>
 			<path
-				d="M113 4L127.5 18.5L113 33"
+				d="M69.6113 2.83264L78.4724 11.6938L69.6113 20.5549"
 				stroke={iColor}
-				stroke-width="8"
+				stroke-width="4.88889"
 				stroke-linecap="round"
 				stroke-linejoin="round"
 			/>

@@ -2,12 +2,20 @@ import styled from "styled-components";
 
 export const AirDropWrapper = styled.div`
 	padding: 150px;
-
 	text-align: center;
 
 	display: flex;
 	flex-direction: column;
 	row-gap: 64px;
+
+	@media screen and (max-width: 1024px) {
+		padding: 60px;
+	}
+
+	@media screen and (max-width: 375px) {
+		padding: 40px 20px;
+		text-align: left;
+	}
 `;
 
 export const Title = styled.h2`
@@ -24,6 +32,14 @@ export const Title = styled.h2`
 	& > span {
 		color: #f29b4c;
 	}
+	@media screen and (max-width: 375px) {
+		font-size: 48px;
+		line-height: 48px;
+
+		& > span {
+			color: #fe6768;
+		}
+	}
 `;
 
 export const Label = styled.span`
@@ -35,6 +51,10 @@ export const Label = styled.span`
 	letter-spacing: -0.02em;
 
 	color: #686a6c;
+	@media screen and (max-width: 375px) {
+		font-size: 20px;
+		letter-spacing: -0.02em;
+	}
 `;
 
 export const BuyButton = styled.div`
@@ -68,5 +88,10 @@ export const CardContent = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	column-gap: 50px;
+	column-gap: 32px;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		row-gap: 32px;
+	}
 `;

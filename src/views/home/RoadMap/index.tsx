@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Image from "next/legacy/image";
 import RoadMapGroup from "components/RoadMap";
 import NextArrowIcon from "components/Icons/next-arrow";
 // @styled components
@@ -7,27 +8,35 @@ import {
 	Content,
 	Label,
 	RoadMapWrapper,
-	ShibImage,
+	ImageWrapper,
 } from "./roadmap.styles";
 // @assets
-import RoadMapImg from "assets/images/roadmap.png";
+import RoadMapImg from "assets/images/roadmap.jpg";
+// @types
 import { RoadMapData } from "assets/data/roadmap";
 
 const RoadMapView: React.FC = () => {
+	const [RoadIndex, setRoadIndex] = useState<number>(1);
+
 	return (
 		<RoadMapWrapper>
-			<div>
+			<ImageWrapper>
+				<Image src={RoadMapImg} alt="shibart-roadmap" />
 				<Content>
 					<Label>Roadmap</Label>
 					<ArrowButton>
 						<NextArrowIcon />
 					</ArrowButton>
 				</Content>
-				<ShibImage src={RoadMapImg.src} />
-			</div>
+			</ImageWrapper>
 			<div>
 				{RoadMapData.map((item: any, index: number) => (
-					<RoadMapGroup key={`roadmap-group-${index}`} {...item} />
+					<RoadMapGroup
+						key={`roadmap-group-${index}`}
+						{...item}
+						RoadIndex={RoadIndex}
+						setRoadIndex={setRoadIndex}
+					/>
 				))}
 			</div>
 		</RoadMapWrapper>

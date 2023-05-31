@@ -6,9 +6,10 @@ export const LogoWrapper = styled.div<{ pos: "header" | "footer" }>`
 	gap: 12px;
 	position: relative;
 
-	${({ pos }) => {
-		if (pos === "header")
-			return `
+	@media screen and (min-width: 376px) {
+		${({ pos }) => {
+			if (pos === "header")
+				return `
 			&::after {
 				content: " ";
 				display: block;
@@ -20,7 +21,8 @@ export const LogoWrapper = styled.div<{ pos: "header" | "footer" }>`
 				right: -32px;
 			}
     `;
-	}};
+		}};
+	}
 `;
 
 export const Label = styled.p`

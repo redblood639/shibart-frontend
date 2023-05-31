@@ -7,10 +7,23 @@ export const GalleyWrapper = styled.div`
 	flex-direction: column;
 	row-gap: 64px;
 
+	@media screen and (max-width: 1024px) {
+		padding: 60px;
+	}
+
+	@media screen and (max-width: 375px) {
+		padding: 24px;
+	}
+
 	& > div:nth-child(2) {
 		display: flex;
 		column-gap: 12px;
 		align-items: center;
+
+		@media screen and (max-width: 375px) {
+			flex-direction: column;
+			row-gap: 12px;
+		}
 	}
 `;
 
@@ -32,6 +45,17 @@ export const GalleryContent = styled.div`
 	grid-column-gap: 40px;
 
 	grid-template-columns: repeat(4, 1fr);
+
+	@media screen and (max-width: 1200px) {
+		grid-template-columns: repeat(3, 1fr);
+		grid-row-gap: 44px;
+		grid-column-gap: 20px;
+	}
+
+	@media screen and (max-width: 375px) {
+		display: flex;
+		flex-direction: column;
+	}
 `;
 
 export const ExploreButton = styled.div`
@@ -48,6 +72,7 @@ export const ExploreButton = styled.div`
 	background: #3c2c2d;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 4px;
+
 	& > span {
 		font-weight: 800;
 		font-size: 12px;
@@ -59,6 +84,10 @@ export const ExploreButton = styled.div`
 		color: #f7fbfa;
 
 		white-space: nowrap;
+	}
+
+	@media screen and (max-width: 375px) {
+		width: 100%;
 	}
 `;
 
@@ -90,4 +119,8 @@ export const SettingButton = styled.div`
 	border-radius: 4px;
 
 	cursor: pointer;
+
+	@media screen and (max-width: 375px) {
+		width: 100%;
+	}
 `;

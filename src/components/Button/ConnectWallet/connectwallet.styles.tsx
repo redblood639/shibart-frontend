@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const ButtonWrapper = styled.div`
 	padding: 12px 32px;
-
+	background: #f7fbfa;
 	border: 2px solid #555555;
+	text-align: center;
 	border-radius: 4px;
 
 	cursor: pointer;

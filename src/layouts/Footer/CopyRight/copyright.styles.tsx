@@ -14,7 +14,15 @@ export const CopyRightWrapper = styled.div`
 	& > div:nth-child(2) {
 		display: flex;
 		align-items: center;
-		gap: 40px;
+		column-gap: 40px;
+	}
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		align-items: start;
+		row-gap: 16px;
+
+		padding: 24px;
 	}
 `;
 
@@ -22,11 +30,11 @@ export const Label = styled.div`
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 20px;
-	/* identical to box height, or 143% */
 
 	letter-spacing: -0.02em;
 
-	/* Neutral/4 */
-
 	color: #a6aead;
+	@media screen and (max-width: 768px) {
+		font-size: 12.5px;
+	}
 `;

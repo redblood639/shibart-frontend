@@ -29,4 +29,8 @@ export const MainWrapper = styled.div`
 	& > div:nth-child(2) {
 		background: #f8caa0;
 	}
+
+	@media screen and (max-width: 375px) {
+		flex-direction: column;
+	}
 `;

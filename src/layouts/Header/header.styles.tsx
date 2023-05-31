@@ -11,9 +11,23 @@ export const HeaderWrapper = styled.div`
 
 	border-bottom: 1px solid #e1e2e2;
 
-	& > div:nth-child(2) {
-		display: flex;
-		align-items: center;
-		gap: 60px;
+	@media screen and (max-width: 768px) {
+		padding: 22px;
+	}
+`;
+
+export const DeskMenu_W = styled.div`
+	display: flex;
+	align-items: center;
+	gap: 60px;
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+`;
+
+export const MobileMenu_W = styled.div`
+	@media screen and (min-width: 769px) {
+		display: none;
 	}
 `;

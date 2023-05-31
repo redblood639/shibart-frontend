@@ -3,17 +3,12 @@ import React from "react";
 import { ArtImageWrapper } from "./artimage.styles";
 // @types
 import { TArt } from "types/Art";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
-const ArtImage: React.FC<TArt> = ({
-	imgSrc,
-	label,
-	width = 330,
-	height = 330,
-}) => {
+const ArtImage: React.FC<TArt> = ({ imgSrc, label }) => {
 	return (
 		<ArtImageWrapper>
-			<Image src={imgSrc} alt={label} width={width} height={height} />
+			<Image src={imgSrc} alt={label} />
 		</ArtImageWrapper>
 	);
 };

@@ -7,6 +7,10 @@ export const AcceptWrapper = styled.div`
 	border-radius: 4px;
 
 	cursor: pointer;
+
+	@media screen and (max-width: 768px) {
+		padding: 5px;
+	}
 `;
 
 export const Label = styled.span`

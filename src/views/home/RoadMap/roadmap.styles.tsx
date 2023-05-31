@@ -2,29 +2,28 @@ import styled from "styled-components";
 
 export const RoadMapWrapper = styled.div`
 	display: flex;
-	height: 1408px;
 	background: #f1f4f4;
-	& > div {
-		flex: 50%;
-	}
-
-	& > div:nth-child(1) {
-		background: #f8caa0;
-		position: relative;
-	}
 
 	& > div:nth-child(2) {
+		flex: 50%;
 		padding: 48px;
 
 		display: flex;
 		flex-direction: column;
+
+		@media screen and (max-width: 375px) {
+			padding: 24px;
+		}
+	}
+
+	@media screen and (max-width: 375px) {
+		flex-direction: column;
 	}
 `;
 
-export const ShibImage = styled.img`
-	position: absolute;
-	bottom: 0;
-	right: 0;
+export const ImageWrapper = styled.div`
+	flex: 50%;
+	position: relative;
 `;
 
 export const Content = styled.div`
@@ -35,6 +34,16 @@ export const Content = styled.div`
 	display: flex;
 	flex-direction: column;
 	row-gap: 40px;
+
+	@media screen and (max-width: 1024px) {
+		left: 50px;
+		top: 50px;
+	}
+
+	@media screen and (max-width: 375px) {
+		left: 29px;
+		top: 50px;
+	}
 `;
 
 export const Label = styled.div`
@@ -45,6 +54,16 @@ export const Label = styled.div`
 	letter-spacing: -0.02em;
 
 	color: #202025;
+
+	@media screen and (max-width: 1024px) {
+		font-size: 60px;
+		line-height: 58px;
+	}
+
+	@media screen and (max-width: 375px) {
+		font-size: 40px;
+		line-height: 48px;
+	}
 `;
 
 export const ArrowButton = styled.div`
@@ -59,4 +78,9 @@ export const ArrowButton = styled.div`
 	align-items: center;
 
 	cursor: pointer;
+
+	@media screen and (max-width: 375px) {
+		width: 117.33px;
+		height: 44px;
+	}
 `;

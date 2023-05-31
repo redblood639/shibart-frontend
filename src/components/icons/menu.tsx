@@ -3,9 +3,9 @@ import React from "react";
 import { IconProps } from "types/Icon";
 
 // -----------------------------------------------
-const DotIcon: React.FC<IconProps> = ({
-	iColor = "#F29B4C",
-	iSize = { x: 24, y: 24 },
+const MenuIcon: React.FC<IconProps> = ({
+	iColor = "#3C2C2D",
+	iSize = { x: 24, y: 12 },
 }) => {
 	return (
 		<svg
@@ -14,9 +14,9 @@ const DotIcon: React.FC<IconProps> = ({
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
-			<circle cx="12" cy="12" r="11" stroke={iColor} strokeWidth="2" />
-			<circle cx="12" cy="12" r="1" stroke={iColor} strokeWidth="2" />
+			<rect width="24" height="3" rx="1.5" fill={iColor} />
+			<rect y="9" width="18" height="3" rx="1.5" fill={iColor} />
 		</svg>
 	);
 };
-export default DotIcon;
+export default MenuIcon;
