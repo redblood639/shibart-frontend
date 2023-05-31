@@ -15,7 +15,6 @@ export const GalleyWrapper = styled.div`
 `;
 
 export const Label = styled.h2`
-	font-style: normal;
 	font-weight: 800;
 	font-size: 80px;
 	line-height: 80px;
@@ -50,7 +49,6 @@ export const ExploreButton = styled.div`
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 4px;
 	& > span {
-		font-style: normal;
 		font-weight: 800;
 		font-size: 12px;
 		line-height: 24px;
@@ -73,7 +71,6 @@ export const SearchInput = styled.input`
 	border: 2px solid #a6aead;
 	border-radius: 4px;
 
-	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 24px;

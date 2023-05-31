@@ -10,16 +10,12 @@ export const AcceptWrapper = styled.div`
 `;
 
 export const Label = styled.span`
-	font-style: normal;
 	font-weight: 800;
 	font-size: 14px;
 	line-height: 24px;
-	/* identical to box height, or 200% */
 
 	letter-spacing: 0.17em;
 	text-transform: uppercase;
-
-	/* 2 */
 
 	color: #3c2c2d;
 `;

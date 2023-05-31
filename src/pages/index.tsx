@@ -1,6 +1,12 @@
 import React from "react";
 // @views
-import { GenerateView, MainView, GalleryView } from "views/home";
+import {
+	GenerateView,
+	MainView,
+	GalleryView,
+	RoadMapView,
+	AirDropView,
+} from "views/home";
 
 export default function Home() {
 	return (
@@ -8,6 +14,8 @@ export default function Home() {
 			<MainView />
 			<GenerateView />
 			<GalleryView />
+			<RoadMapView />
+			<AirDropView />
 		</>
 	);
 }

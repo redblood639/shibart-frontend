@@ -9,7 +9,7 @@ export const CopyRightWrapper = styled.div`
 
 	border-top: 1px solid #e1e2e2;
 
-	padding: 42px 100px;
+	padding: 42px 150px;
 
 	& > div:nth-child(2) {
 		display: flex;
@@ -19,7 +19,6 @@ export const CopyRightWrapper = styled.div`
 `;
 
 export const Label = styled.div`
-	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 20px;

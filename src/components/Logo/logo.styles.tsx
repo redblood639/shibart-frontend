@@ -25,7 +25,7 @@ export const LogoWrapper = styled.div<{ pos: "header" | "footer" }>`
 
 export const Label = styled.p`
 	text-transform: uppercase;
-	font-style: normal;
+
 	font-weight: 900;
 	font-size: 36px;
 	line-height: 52px;

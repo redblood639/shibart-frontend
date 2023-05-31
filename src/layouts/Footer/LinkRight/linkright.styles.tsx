@@ -7,7 +7,7 @@ export const LinkRightWrapper = styled.div`
 	justify-content: space-between;
 	align-items: start;
 
-	padding: 42px 100px;
+	padding: 42px 150px;
 
 	& > div:nth-child(1) {
 		display: flex;
@@ -32,7 +32,6 @@ export const LinkRightWrapper = styled.div`
 `;
 
 export const Label = styled.span`
-	font-style: normal;
 	font-weight: 800;
 	font-size: 14px;
 	line-height: 24px;
@@ -44,7 +43,6 @@ export const Label = styled.span`
 `;
 
 export const Description = styled.div`
-	font-style: normal;
 	font-weight: 700;
 	font-size: 23px;
 	line-height: 32px;
@@ -56,7 +54,6 @@ export const Description = styled.div`
 
 export const MenuItemWrapper = styled.div`
 	span {
-		font-style: normal;
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 20px;

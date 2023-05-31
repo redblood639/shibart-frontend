@@ -1,32 +1,34 @@
 import styled from "styled-components";
 
-export const GenerateWrapper = styled.div`
-	background: #f1f4f4;
-
-	padding: 95px;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-`;
-
-export const Header = styled.h2`
-	font-weight: 800;
-	font-size: 72px;
-	line-height: 96px;
+export const AirDropWrapper = styled.div`
+	padding: 150px;
 
 	text-align: center;
 
+	display: flex;
+	flex-direction: column;
+	row-gap: 64px;
+`;
+
+export const Title = styled.h2`
+	font-weight: 800;
+	font-size: 80px;
+	line-height: 80px;
+
+	padding-bottom: 20px;
+
+	letter-spacing: -0.02em;
+
 	color: #3c2c2d;
+
+	& > span {
+		color: #f29b4c;
+	}
 `;
 
 export const Label = styled.span`
-	display: block;
-
-	font-family: "Inter";
-
-	font-weight: 500;
-	font-size: 20px;
+	font-weight: 700;
+	font-size: 24px;
 	line-height: 32px;
 
 	text-align: center;
@@ -35,7 +37,8 @@ export const Label = styled.span`
 	color: #686a6c;
 `;
 
-export const CreateButton = styled.div`
+export const BuyButton = styled.div`
+	margin: auto;
 	cursor: pointer;
 
 	display: flex;
@@ -57,5 +60,13 @@ export const CreateButton = styled.div`
 		text-transform: uppercase;
 
 		color: #f7fbfa;
+		white-space: nowrap;
 	}
+`;
+
+export const CardContent = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 50px;
 `;
