@@ -1,7 +1,7 @@
 import React from "react";
-import CloseIcon from "components/Icons/close";
 import ConnectWallet from "components/Button/ConnectWallet";
 import MenuArrow from "components/Icons/menu-arrow";
+import CloseIcon from "components/Icons/multiply";
 import Link from "next/link";
 // @styled components
 import {
