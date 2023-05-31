@@ -24,6 +24,13 @@ export const RoadMapWrapper = styled.div`
 export const ImageWrapper = styled.div`
 	flex: 50%;
 	position: relative;
+	min-height: 560px;
+
+	background: #f8caa0;
+	background-image: url("/roadmap.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right bottom;
 `;
 
 export const Content = styled.div`

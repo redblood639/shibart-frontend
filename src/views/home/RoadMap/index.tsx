@@ -10,8 +10,6 @@ import {
 	RoadMapWrapper,
 	ImageWrapper,
 } from "./roadmap.styles";
-// @assets
-import RoadMapImg from "assets/images/roadmap.jpg";
 // @types
 import { RoadMapData } from "assets/data/roadmap";
 
@@ -21,7 +19,6 @@ const RoadMapView: React.FC = () => {
 	return (
 		<RoadMapWrapper>
 			<ImageWrapper>
-				<Image src={RoadMapImg} alt="shibart-roadmap" />
 				<Content>
 					<Label>Roadmap</Label>
 					<ArrowButton>

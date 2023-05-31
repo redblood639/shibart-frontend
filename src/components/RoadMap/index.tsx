@@ -32,7 +32,7 @@ const RoadMapGroup: React.FC<CombinedProps> = ({
 		<RoadMapWrapper>
 			<div>
 				<Title>{title}</Title>
-				{show && RoadIndex === id ? (
+				{show ? (
 					<div onClick={() => onClickItem(false, id)}>
 						<MinusIcon />
 					</div>
@@ -43,7 +43,7 @@ const RoadMapGroup: React.FC<CombinedProps> = ({
 				)}
 			</div>
 			<RoadMapItems>
-				{show && RoadIndex === id
+				{show
 					? labels.map((label: string, index: number) => (
 							<div key={title + index}>
 								<div>

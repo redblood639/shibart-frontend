@@ -7,10 +7,10 @@ export const CardWrapper = styled.div`
 	padding: 80px 60px;
 	row-gap: 40px;
 	background: #f7fbfa;
-
 	cursor: pointer;
+	box-shadow: 0px 32px 48px -16px rgba(0, 0, 0, 0.1);
 	:hover {
-		box-shadow: 0px 32px 48px -16px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 32px 48px -16px rgba(0, 0, 0, 0.5);
 	}
 
 	@media screen and (max-width: 1024px) {
