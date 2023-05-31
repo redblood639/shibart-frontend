@@ -16,7 +16,7 @@ export const RoadMapWrapper = styled.div`
 		}
 	}
 
-	@media screen and (max-width: 375px) {
+	@media screen and (max-width: 768px) {
 		flex-direction: column;
 	}
 `;

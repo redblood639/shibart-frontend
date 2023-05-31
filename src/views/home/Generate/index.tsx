@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Autoplay } from "swiper";
 import ArtImage from "components/ArtImage";
 // @styled components
 import {
@@ -42,6 +42,11 @@ const GenerateView: React.FC = () => {
 						spaceBetween: 40,
 					},
 				}}
+				autoplay={{
+					delay: 2500,
+					disableOnInteraction: false,
+				}}
+				modules={[Autoplay]}
 			>
 				{ShibArts.map((item: TArt, index: number) => (
 					<SwiperSlide key={`swiper-creat-art-${index}`}>
