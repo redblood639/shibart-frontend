@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "components/Logo";
 import Menu from "components/Menu";
-import MenuIcon from "components/Icons/menu";
+import MenuIcon from "assets/Icons/menu";
 import MobileMenu from "components/MobileMenu";
 import ConnectWallet from "components/Button/ConnectWallet";
 // styled componnets

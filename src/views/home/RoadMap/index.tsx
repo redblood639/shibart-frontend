@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/legacy/image";
 import RoadMapGroup from "components/RoadMap";
-import NextArrowIcon from "components/Icons/next-arrow";
+import NextArrowIcon from "assets/Icons/next-arrow";
 // @styled components
 import {
 	ArrowButton,

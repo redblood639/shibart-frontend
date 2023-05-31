@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import DotIcon from "components/Icons/dot";
-import MinusIcon from "components/Icons/minus";
-import PlusIcon from "components/Icons/plus";
+import DotIcon from "assets/Icons/dot";
+import MinusIcon from "assets/Icons/minus";
+import PlusIcon from "assets/Icons/plus";
 // @styled components
 import { Label, RoadMapItems, RoadMapWrapper, Title } from "./roadmap.styles";
 // @types

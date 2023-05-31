@@ -13,7 +13,7 @@ import {
 import { ShibArts } from "assets/data/swiper";
 // @types
 import { TArt } from "types/Art";
-import SettingIcon from "components/Icons/setting";
+import SettingIcon from "assets/Icons/setting";
 
 const GalleyView: React.FC = () => {
 	return (
