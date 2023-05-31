@@ -10,7 +10,7 @@ import {
 } from "./linkright.styles";
 // @assets
 import { Shibart, Info, Social } from "assets/data/menu";
-import { TMenuItem } from "types/Menu/MenuItem";
+import { TMenuItem } from "types/MenuItem";
 
 const MenuItem: React.FC<TMenuItem> = ({ label, link }) => {
 	return (

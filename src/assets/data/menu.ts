@@ -1,4 +1,4 @@
-import { TMenuItem } from "types/Menu/MenuItem";
+import { TMenuItem } from "types/MenuItem";
 
 export const MenuData:TMenuItem[] = [
 	{

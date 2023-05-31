@@ -1,3 +1,13 @@
+import React from "react";
+// @views
+import { GenerateView, MainView, GalleryView } from "views/home";
+
 export default function Home() {
-	return <div style={{ height: 800 }}>Home Page</div>;
+	return (
+		<>
+			<MainView />
+			<GenerateView />
+			<GalleryView />
+		</>
+	);
 }

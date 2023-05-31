@@ -1,4 +1,7 @@
-import  { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -12,8 +15,9 @@ const GlobalStyle = createGlobalStyle`
   html, body, #__next {
     height: 100%;
   }
-
+  
   body {
+    background: #F7FBFA;
     font-family: 'Inter';
   }
 
@@ -21,6 +25,13 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
 
-`
-export default GlobalStyle
+  .create-swiper {
+    margin: 48px 0;
+  }
+`;
+export default GlobalStyle;

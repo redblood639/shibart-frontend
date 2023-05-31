@@ -5,7 +5,7 @@ import { MenuWrapper } from "./menu.styles";
 // @assets
 import { MenuData } from "assets/data/menu";
 // @types
-import { TMenuItem } from "types/Menu/MenuItem";
+import { TMenuItem } from "types/MenuItem";
 
 const Menu: React.FC = () => {
 	return (
