@@ -25,9 +25,9 @@ const NextArrowIcon: React.FC<IconProps> = ({
 			<path
 				d="M69.6113 2.83264L78.4724 11.6938L69.6113 20.5549"
 				stroke={iColor}
-				stroke-width="4.88889"
+				strokeWidth="4.88889"
 				stroke-linecap="round"
-				stroke-linejoin="round"
+				strokeLinejoin="round"
 			/>
 		</svg>
 	);
