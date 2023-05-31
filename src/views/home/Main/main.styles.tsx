@@ -2,16 +2,21 @@ import styled from "styled-components";
 
 export const MainWrapper = styled.div`
 	display: flex;
-
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
 	& > div {
-		display: flex;
-		flex-basis: 50%;
-		align-items: center;
-		justify-content: center;
+		flex: 50%;
+		@media screen and (max-width: 768px) {
+			flex: 1;
+		}
 	}
 
 	& > div:nth-child(1) {
 		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		::after {
 			content: " ";
@@ -28,6 +33,12 @@ export const MainWrapper = styled.div`
 
 	& > div:nth-child(2) {
 		background: #f8caa0;
+		padding: 24px 48px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		row-gap: 25px;
 	}
 
 	@media screen and (max-width: 375px) {

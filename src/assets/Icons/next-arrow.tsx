@@ -26,7 +26,7 @@ const NextArrowIcon: React.FC<IconProps> = ({
 				d="M69.6113 2.83264L78.4724 11.6938L69.6113 20.5549"
 				stroke={iColor}
 				strokeWidth="4.88889"
-				stroke-linecap="round"
+				strokeLinecap="round"
 				strokeLinejoin="round"
 			/>
 		</svg>

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const MenuWrapper = styled.div`
+	z-index: 99;
 	background: #010101;
 
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 

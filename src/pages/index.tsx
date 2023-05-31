@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 // @views
 import {
@@ -11,6 +12,9 @@ import {
 export default function Home() {
 	return (
 		<>
+			<Head>
+				<title>ShibArt</title>
+			</Head>
 			<MainView />
 			<GenerateView />
 			<GalleryView />

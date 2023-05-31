@@ -2,9 +2,11 @@ import React from "react";
 // @styled components
 import { ButtonWrapper, Label } from "./connectwallet.styles";
 
-export const ConnectWallet: React.FC = () => {
+export const ConnectWallet: React.FC<{ type?: string }> = ({
+	type = "parimary",
+}) => {
 	return (
-		<ButtonWrapper>
+		<ButtonWrapper type={type}>
 			<Label>CONNECT WALLET</Label>
 		</ButtonWrapper>
 	);
