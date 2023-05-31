@@ -32,6 +32,11 @@ export const Title = styled.h2`
 	& > span {
 		color: #f29b4c;
 	}
+	@media screen and (max-width: 1440px) {
+		font-size: 60px;
+		line-height: 60px;
+	}
+
 	@media screen and (max-width: 375px) {
 		font-size: 48px;
 		line-height: 48px;
