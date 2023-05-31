@@ -1,6 +1,6 @@
 import React from "react";
 import ConnectWallet from "components/Button/ConnectWallet";
-import MenuArrow from "components/Icons/menu-arrow";
+import MenuArrow from "components/Icons/menu_arrow";
 import CloseIcon from "components/Icons/multiply";
 import Link from "next/link";
 // @styled components
