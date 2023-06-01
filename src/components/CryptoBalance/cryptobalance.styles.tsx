@@ -11,7 +11,7 @@ export const BalanceWrappe = styled.div`
 	column-gap: 40px;
 	align-items: center;
 
-	@media screen and (max-width: 375px) {
+	@media screen and (max-width: 425px) {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		row-gap: 24px;

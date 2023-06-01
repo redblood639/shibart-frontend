@@ -21,7 +21,7 @@ export const LinkRightWrapper = styled.div`
 
 		column-gap: 169px;
 
-		@media screen and (max-width: 375px) {
+		@media screen and (max-width: 425px) {
 			column-gap: 50px;
 		}
 

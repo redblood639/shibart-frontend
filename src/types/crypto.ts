@@ -6,3 +6,8 @@ export interface TCrypto {
 	symbol: string;
 	network: string;
 }
+
+export interface TWallet {
+	icon: StaticImageData;
+	name: string;
+}

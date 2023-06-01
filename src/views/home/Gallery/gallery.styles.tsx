@@ -20,7 +20,7 @@ export const GalleyWrapper = styled.div`
 		column-gap: 12px;
 		align-items: center;
 
-		@media screen and (max-width: 375px) {
+		@media screen and (max-width: 425px) {
 			flex-direction: column;
 			row-gap: 12px;
 		}
@@ -52,7 +52,7 @@ export const GalleryContent = styled.div`
 		grid-column-gap: 20px;
 	}
 
-	@media screen and (max-width: 375px) {
+	@media screen and (max-width: 425px) {
 		display: flex;
 		flex-direction: column;
 	}
@@ -86,7 +86,7 @@ export const ExploreButton = styled.div`
 		white-space: nowrap;
 	}
 
-	@media screen and (max-width: 375px) {
+	@media screen and (max-width: 425px) {
 		width: 100%;
 	}
 `;
@@ -120,7 +120,7 @@ export const SettingButton = styled.div`
 
 	cursor: pointer;
 
-	@media screen and (max-width: 375px) {
+	@media screen and (max-width: 425px) {
 		width: 100%;
 	}
 `;

@@ -4,11 +4,9 @@ const AppContext = createContext();
 
 export function AppWrapper({ children }) {
     const [showModal, setShowModal] = useState(false);
-    const [scanModalShow, setScanModalShow] = useState(false)
-    const [signInModal, setSignInModal] = useState(false)
     return (
         <AppContext.Provider
-            value={{ walletModalContext: [showModal, setShowModal], scanModalContext: [scanModalShow, setScanModalShow], signInModalContext:[signInModal, setSignInModal] }}
+            value={{ walletModalContext: [showModal, setShowModal] }}
         >
             {children}
         </AppContext.Provider>

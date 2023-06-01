@@ -28,7 +28,6 @@ export const SwapCryptoWrapper = styled.div`
 			align-items: center;
 			justify-content: space-between;
 			column-gap: 10px;
-			border: 1px solid red;
 
 			padding: 16px 20px;
 
