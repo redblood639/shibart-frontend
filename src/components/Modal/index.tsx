@@ -33,7 +33,10 @@ const WalletModal: React.FC = () => {
 
 					<DescWrapper>
 						<div>
-							<HeadLabel>Connect wallet</HeadLabel>
+							<HeadLabel>
+								Connect <br />
+								wallet
+							</HeadLabel>
 							<ArrowButton>
 								<Image src={ArrowImg} alt="arrow" width={40} height={12} />
 							</ArrowButton>
