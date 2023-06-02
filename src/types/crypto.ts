@@ -10,4 +10,5 @@ export interface TCrypto {
 export interface TWallet {
 	icon: StaticImageData;
 	name: string;
+	type?: any;
 }

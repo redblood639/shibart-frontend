@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>ShibArt</title>
+				<title>FAQ - ShibArt</title>
 			</Head>
 			<FaqView />
 		</>

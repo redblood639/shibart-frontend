@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/legacy/image";
+import { useWeb3React } from "@web3-react/core";
+
 // @styled components
 import {
 	ChooseWalletWrapper,
@@ -11,6 +13,7 @@ import {
 	NoWallet,
 	CloseButton,
 } from "./choosewallet.styles";
+
 // @types
 import { TWallet } from "types/crypto";
 // @assets
@@ -19,9 +22,9 @@ import ScanImg from "assets/images/placeholder.png";
 import { walletList } from "assets/data/wallets";
 import { useAppContext } from "context/state";
 
-const WalletItem: React.FC<TWallet> = (props) => {
+const WalletItem: React.FC<TWallet & { activate: any }> = (props) => {
 	return (
-		<ItemWrapper>
+		<ItemWrapper onClick={() => props.activate(props.type)}>
 			<Image src={props.icon} alt={props.name} width={20} height={20} />
 			<Label>{props.name}</Label>
 		</ItemWrapper>
@@ -31,8 +34,11 @@ const WalletItem: React.FC<TWallet> = (props) => {
 const ChooseWallet: React.FC<{ setContentIdx: Function }> = ({
 	setContentIdx,
 }) => {
+	const { activate } = useWeb3React();
+
 	const { walletModalContext } = useAppContext();
 	const [showModal, setShowModal] = walletModalContext;
+
 	return (
 		<ChooseWalletWrapper>
 			<CloseButton onClick={() => setShowModal(false)}>
@@ -41,7 +47,11 @@ const ChooseWallet: React.FC<{ setContentIdx: Function }> = ({
 			<HeadLabel>Choose the Wallet</HeadLabel>
 			<WalletItems>
 				{walletList.map((item: TWallet, index: number) => (
-					<WalletItem key={`wallet-item-${index}`} {...item} />
+					<WalletItem
+						key={`wallet-item-${index}`}
+						{...item}
+						activate={activate}
+					/>
 				))}
 			</WalletItems>
 			<ScanButton onClick={() => setContentIdx(2)}>
