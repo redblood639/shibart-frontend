@@ -14,6 +14,12 @@ import { CardData } from "assets/data/card";
 import { TCard } from "types/card";
 
 const AirDropView: React.FC = () => {
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	};
 	return (
 		<AirDropWrapper>
 			<div>
@@ -31,7 +37,7 @@ const AirDropView: React.FC = () => {
 					<Card key={`airdrop-card-${index}`} {...item} />
 				))}
 			</CardContent>
-			<BuyButton>
+			<BuyButton onClick={scrollToTop}>
 				<span>buy $ART now</span>
 			</BuyButton>
 		</AirDropWrapper>

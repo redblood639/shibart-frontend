@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import DotIcon from "assets/Icons/dot";
 import MinusIcon from "assets/Icons/minus";
 import PlusIcon from "assets/Icons/plus";
 // @styled components
-import { Label, RoadMapItems, RoadMapWrapper, Title } from "./roadmap.styles";
+import { Label, RoadMapItems, RoadMapWrapper, Title } from "./faq.styles";
 // @types
 import { TRoadMap } from "types/roadmap";
 
@@ -14,7 +13,7 @@ interface PropsA {
 
 type CombinedProps = TRoadMap & PropsA;
 
-const RoadMapGroup: React.FC<CombinedProps> = ({
+const FaqGroup: React.FC<CombinedProps> = ({
 	title,
 	labels,
 	RoadIndex,
@@ -32,7 +31,7 @@ const RoadMapGroup: React.FC<CombinedProps> = ({
 		<RoadMapWrapper>
 			<div>
 				<Title>{title}</Title>
-				{show ? (
+				{show && RoadIndex === id ? (
 					<div onClick={() => onClickItem(false, id)}>
 						<MinusIcon />
 					</div>
@@ -43,13 +42,9 @@ const RoadMapGroup: React.FC<CombinedProps> = ({
 				)}
 			</div>
 			<RoadMapItems>
-				{show
+				{show && RoadIndex === id
 					? labels.map((label: string, index: number) => (
 							<div key={title + index}>
-								<div>
-									<DotIcon />
-								</div>
-
 								<Label>{label}</Label>
 							</div>
 					  ))
@@ -59,4 +54,4 @@ const RoadMapGroup: React.FC<CombinedProps> = ({
 	);
 };
 
-export default RoadMapGroup;
+export default FaqGroup;

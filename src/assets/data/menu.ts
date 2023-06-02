@@ -3,7 +3,7 @@ import { TMenuItem } from "types/MenuItem";
 export const MenuData: TMenuItem[] = [
 	{
 		label: "BUY $ART",
-		link: "https://uniswap.io",
+		link: "/",
 		special: true,
 	},
 	{
@@ -13,7 +13,7 @@ export const MenuData: TMenuItem[] = [
 	},
 	{
 		label: "FAQ",
-		link: "/FAQ",
+		link: "/faq",
 		special: false,
 	},
 ];

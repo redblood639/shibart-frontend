@@ -86,6 +86,16 @@ export const ExploreButton = styled.div`
 		white-space: nowrap;
 	}
 
+	& > span:nth-child(2) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #f8caa0;
+		border-radius: 50%;
+		width: 25px;
+		height: 25px;
+	}
+
 	@media screen and (max-width: 425px) {
 		width: 100%;
 	}

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const RoadMapWrapper = styled.div`
+export const FaqWrapper = styled.div`
 	display: flex;
 	background: #f1f4f4;
 
@@ -27,7 +27,7 @@ export const ImageWrapper = styled.div`
 	min-height: 560px;
 
 	background: #f8caa0;
-	background-image: url("/roadmap.jpg");
+	background-image: url("/faq.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right bottom;

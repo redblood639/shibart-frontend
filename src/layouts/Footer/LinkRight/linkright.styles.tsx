@@ -5,7 +5,7 @@ export const LinkRightWrapper = styled.div`
 	justify-content: space-between;
 	align-items: start;
 
-	padding: 42px 150px;
+	padding: 80px 150px;
 
 	& > div:nth-child(1) {
 		display: flex;
