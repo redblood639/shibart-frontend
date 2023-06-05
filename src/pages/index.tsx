@@ -11,7 +11,7 @@ import {
 
 export default function Home() {
 	return (
-		<>
+		<div>
 			<Head>
 				<title>ShibArt</title>
 			</Head>
@@ -20,6 +20,6 @@ export default function Home() {
 			<GalleryView />
 			<RoadMapView />
 			<AirDropView />
-		</>
+		</div>
 	);
 }

@@ -11,6 +11,11 @@ const GlobalStyle = createGlobalStyle`
     transition: all 0.3s ease-out;
   }
 
+  html {
+    display: flex;
+    justify-content: center;
+  }
+
   html, body, #__next {
     height: 100%;
   }
@@ -18,6 +23,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: #F7FBFA;
     font-family: 'Inter';
+    max-width: 1920px !important;
+ 
   }
 
   a {
